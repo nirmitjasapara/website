@@ -27,7 +27,7 @@ display: none;
     justify-content: space-around;
     list-style: none;
 }
-.logo {
+.logo > a{
     text-decoration: none;
   }
 section {
@@ -36,7 +36,6 @@ border-radius: 10px;
 border: 1px solid lightgrey;
 display: flex;
 flex-direction: column;
-align-items: center;
 flex: 1 1 120px;
 }
 section > p {
@@ -52,11 +51,6 @@ header {
 }
 }
 @media screen and (min-width: 700px) {
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 .menu {
     display: flex;
     flex-direction: row;
