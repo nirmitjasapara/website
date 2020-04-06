@@ -9,7 +9,7 @@ background-color: rgb(20, 20, 20);
 }
 header {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 border-radius: 10px;
 border: 5px dotted black;
@@ -30,9 +30,13 @@ justify-content: flex-end;
 .menu {
 display: none;
 }
+.showmenu
+{
+    display: block;
+}
 .icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     list-style: none;
 }
@@ -57,10 +61,17 @@ footer {
 width: 100%;
 color: white;
 }
+.hamburger {
+    font-size: 10vw;
+}
 @media screen and (min-width: 520px) {
 header {
     flex-direction: row;
     justify-content: space-evenly;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
 }
 }
 @media screen and (min-width: 700px) {
