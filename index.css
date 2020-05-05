@@ -23,26 +23,34 @@ main {
     background-color: rgb(20, 20, 20);
 }
 .navbar {
-width: 50%;
-display: flex;
-justify-content: flex-end;
+    background-color: gray;
+    border-radius: 10px;
+    border: 5px solid lightgray;
+    display: none;
 }
 .menu {
-display: none;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
 }
 .showmenu
 {
     display: block;
 }
-.icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
-}
 .logo > a{
     text-decoration: none;
     color: white;
+}
+.hamburger {
+    font-size: 10vw;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
 }
 section {
 margin: 5px 0px 5px 0px;
@@ -61,29 +69,42 @@ footer {
 width: 100%;
 color: white;
 }
-.hamburger {
-    font-size: 10vw;
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
 }
 @media screen and (min-width: 520px) {
-header {
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 .icons {
     display: flex;
     flex-direction: row;
 }
 }
 @media screen and (min-width: 700px) {
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px dotted black;
+    background-color: grey;
+    color: white;
+    position: relative;
+    top: -10px;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+header {
+    border: 0;
+    position: inherit;
+    top: 0px;
+}
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
-}
-.menu > li > a {
-    text-decoration: none;
-    color: white;
 }
 .menu > li {
     margin-left: 20px;
@@ -91,5 +112,11 @@ header {
 }
 .hamburger {
     display: none;
+}
+.navbar {
+width: 50%;
+display: flex;
+justify-content: flex-end;
+border: 0;
 }
 }
