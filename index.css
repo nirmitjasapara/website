@@ -1,120 +1,122 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 body {
-font-family: "Roboto", sans-serif;
-margin: 0;
-padding:0 20px 0 20px;
-background-image: linear-gradient(
-    to bottom, 
-    rgba(255,255,255,1)0%, 
-    rgba(255,255,255,0.8)30%, 
-    rgba(255,255,255,0)100%),
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.8) 30%,
+      rgba(255, 255, 255, 0) 100%
+    ),
     url("images/background.jpg");
-animation: stars 200s infinite;
-background-color: black;
-background:cover;
+  animation: stars 200s infinite;
+  background-color: black;
+  background: cover;
 }
 header {
-display: flex;
-flex-direction: row;
-align-items: center;
-border-bottom: 5px solid gold;
-color: goldenrod;
-position: relative;
-top: -10px;
-width: 100%;
-padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 5px solid gold;
+  color: goldenrod;
+  position: relative;
+  top: -10px;
+  width: 100%;
+  padding: 0px 10px 0px 10px;
 }
 .navbar {
-    border-radius: 10px;
-    border: 5px solid lightgray;
-    display: none;
+  border-radius: 10px;
+  border: 5px solid lightgray;
+  display: none;
 }
 .menu {
-    list-style: none;
-    text-align: center;
-    margin: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
 }
 .menu a {
-    text-decoration: none;
-    color: goldenrod;
-    width: 100%;
+  text-decoration: none;
+  color: goldenrod;
+  width: 100%;
 }
-.showmenu
-{
-    display: block;
+.showmenu {
+  display: block;
 }
-.logo > a{
-    text-decoration: none;
-    color: goldenrod;
+.logo > a {
+  text-decoration: none;
+  color: goldenrod;
 }
 .hamburger {
-    font-size: 10vw;
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
+  font-size: 10vw;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
 }
 section {
-margin: 5px 0px 5px 0px;
-padding: 10px 10px 60px 10px;
-border-left: 5px solid green;
+  margin: 5px 0px 5px 0px;
+  padding: 10px 10px 60px 10px;
+  border-left: 5px solid green;
 }
 #about {
-    background: radial-gradient(
-        closest-side at 50% 50%,
-        rgba(255, 255, 255, 1)0%, 
-        rgba(255,255,255,0)100%);
+  background: radial-gradient(
+    closest-side at 50% 50%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 section > p {
-margin: 10px 5px 20px 5px;
+  margin: 10px 5px 20px 5px;
 }
 .project-container > article {
-    border: 5px solid lightgrey;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 1 400px;
-    padding: 10px;
-    background-color: white;
+  border: 5px solid lightgrey;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 400px;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
 }
 section > h2 {
-    text-align: center;
-    color: goldenrod;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 5px 4px rgba(255, 255, 255, 0.5),
-    0px -5px 4px rgba(255, 255, 255, 0.5),
-    5px 0px 4px rgba(255, 255, 255, 0.5),
-    -5px 0px 4px rgba(255, 255, 255, 0.5)
+  text-align: center;
+  color: goldenrod;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 5px 4px rgba(255, 255, 255, 0.5),
+    0px -5px 4px rgba(255, 255, 255, 0.5), 5px 0px 4px rgba(255, 255, 255, 0.5),
+    -5px 0px 4px rgba(255, 255, 255, 0.5);
 }
 footer {
-width: 100%;
-color: goldenrod;
+  width: 100%;
+  color: goldenrod;
 }
 .icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
 }
 .preview {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 520px) {
-.icons {
+  .icons {
     display: flex;
     flex-direction: row;
-}
+  }
 }
 @media screen and (min-width: 700px) {
-.project-container {
+  .project-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.header-container {
+  }
+  .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -124,33 +126,37 @@ color: goldenrod;
     top: -10px;
     width: 100%;
     padding: 0px 10px 0px 10px;
-}
-header {
+  }
+  header {
     border: 0;
     position: inherit;
     top: 0px;
-}
-.menu {
+  }
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
-}
-.menu > li {
+  }
+  .menu > li {
     margin-left: 20px;
     margin-right: 10px;
-}
-.hamburger {
+  }
+  .hamburger {
     display: none;
-}
-.navbar {
-width: 50%;
-display: flex;
-justify-content: flex-end;
-border: 0;
-}
+  }
+  .navbar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    border: 0;
+  }
 }
 @keyframes stars {
-    from {background-position-y: 0%}
-    50% {background-position-y: 100%}
+  from {
+    background-position-y: 0%;
   }
+  50% {
+    background-position-y: 100%;
+  }
+}
