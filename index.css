@@ -5,16 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0 20px 0 20px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0.8) 30%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    url("images/background.jpg");
-  animation: stars 200s infinite;
-  background-color: black;
-  background: cover;
+  background-color: #555;
 }
 header {
   display: flex;
@@ -57,15 +48,13 @@ header {
 }
 section {
   margin: 5px 0px 5px 0px;
-  padding: 10px 10px 60px 10px;
-  border-left: 5px solid green;
+  padding: 0px 0px 60px 0px;
+  border-left: 5px solid goldenrod;
+  border-top: 5px solid goldenrod;
+  border-radius: 5px;
 }
 #about {
-  background: radial-gradient(
-    closest-side at 50% 50%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: white;
 }
 .contact-container {
   display: flex;
@@ -83,8 +72,8 @@ section {
   border-bottom: 1px solid lightgrey;
   border-left: 1px solid lightgrey;
 }
-section > p {
-  margin: 10px 5px 20px 5px;
+section > p, h3 {
+  margin: 10px 15px 20px 15px;
 }
 .project-container > article {
   border: 5px solid lightgrey;
@@ -99,11 +88,10 @@ section > p {
 }
 section > h2 {
   text-align: center;
-  color: goldenrod;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0px 5px 4px rgba(255, 255, 255, 0.5),
-    0px -5px 4px rgba(255, 255, 255, 0.5), 5px 0px 4px rgba(255, 255, 255, 0.5),
-    -5px 0px 4px rgba(255, 255, 255, 0.5);
+  color: black;
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  margin: 0px;
 }
 footer {
   width: 100%;
